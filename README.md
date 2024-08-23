@@ -72,6 +72,7 @@ We used different datasets with different descriptions for each one. <br>
 |**ATIS**|  Airline Travel Information System (ATIS) is a dataset comprising spoken queries for air travel information, such as flight times, prices, and availability. |
 |**CORAAL**|  The Corpus of Regional African American Language. includes audio recordings along with the time-aligned orthographic transcription from over 150 sociolinguistic interviews. |
 
+Here is a link to the dataset used from [hyporadise](https://huggingface.co/datasets/PeacefulData/HyPoradise-v0)
 
 ## Used LLMs
 
