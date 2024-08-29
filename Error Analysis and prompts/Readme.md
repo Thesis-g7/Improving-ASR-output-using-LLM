@@ -74,7 +74,7 @@ These error layers impact each other. For example, background noise (Layer 1) ca
 <br> 
 <br>
 
-<code style="border: 2px solid black; padding: 10px; margin: 10px 0; background-color: #f9f9f9;"> <strong>Important:</strong> Based on this analysis, literal transcription seems to be the best way to transcribe, with no generaltion. This is due to the fact that some errors are beyond out control, described above. Thus, the only evidence we have are the hypotheses given by the ASR.
+<code style="border: 2px solid black; padding: 10px; margin: 10px 0; background-color: #f9f9f9;"> <strong>Important:</strong> Based on this analysis, literal transcription seems to be the best way to transcribe, with no generaltion. This is due to the fact that some errors are beyond our control, as described above. Thus, the only evidence we have are the hypotheses given by the ASR.
 </code>
 
 
@@ -133,7 +133,7 @@ Regarding the error analysis part and after reviewing most of the data instances
 - most of the datasets have grammatically correct output sentences, but others do have grammar mistakes. Like Coraal, swbd, and td3. 
 - the number of instances in all datasets range from 170 to 3000 which is the reason why we get the average performance in WERR. 
 
-<code style="border: 2px solid black; padding: 10px; margin: 10px 0; background-color: #f9f9f9;"> <strong>Important:</strong> Based on the previous analysis of errors and since the expected output sentence differs from the given hypotheses, we need to generate a new transciption, in order to have a logical output with no gramatical mistakes. This is how we prompted the LLMs and found the most optimized WER based on our trials.
+<code style="border: 2px solid black; padding: 10px; margin: 10px 0; background-color: #f9f9f9;"> <strong>Important:</strong> Based on the previous analysis of errors and since the expected output sentence differs from the given hypotheses, it seems that we need to generate a new transciption, in order to have a logical output with no gramatical mistakes. This is how we prompted the LLMs and found the most optimized WER based on our trials.
 </code>
 
 
