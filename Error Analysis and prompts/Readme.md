@@ -74,7 +74,7 @@ These error layers impact each other. For example, background noise (Layer 1) ca
 <br> 
 <br>
 
-<code style="border: 2px solid black; padding: 10px; margin: 10px 0; background-color: #f9f9f9;"> <strong>Important:</strong> Based on previous, literal, verbatim, transcription would be the dominant type due to the lack of input audio file and our inability to consider the errors happened in the first 2 layers. Thus, the only evidence we have are the hypothesis given by the ASR which gives a very high weight to consider majority voting among hypothesis to know which of them are pretty close to the real audio file trancripted.
+<code style="border: 2px solid black; padding: 10px; margin: 10px 0; background-color: #f9f9f9;"> <strong>Important:</strong> Based on this analysis, literal transcription seems to be the best way to transcribe, with no generaltion. This is due to the fact that some errors are beyond out control, described above. Thus, the only evidence we have are the hypotheses given by the ASR.
 </code>
 
 
@@ -133,7 +133,7 @@ Regarding the error analysis part and after reviewing most of the data instances
 - most of the datasets have grammatically correct output sentences, but others do have grammar mistakes. Like Coraal, swbd, and td3. 
 - the number of instances in all datasets range from 170 to 3000 which is the reason why we get the average performance in WERR. 
 
-<code style="border: 2px solid black; padding: 10px; margin: 10px 0; background-color: #f9f9f9;"> <strong>Important:</strong> **Based on previous and since expected output sentences, in some cases, differ from all given hypothesis, so we need to kind of use clean transciption at least to check grammar mistakes and choose between logical setences. And that is what we did in the prompt.**
+<code style="border: 2px solid black; padding: 10px; margin: 10px 0; background-color: #f9f9f9;"> <strong>Important:</strong> Based on the previous analysis of errors and since the expected output sentence differs from the given hypotheses, we need to generate a new transciption, in order to have a logical output with no gramatical mistakes. This is how we prompted the LLMs and found the most optimized WER based on our trials.
 </code>
 
 
