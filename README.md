@@ -26,7 +26,7 @@ Our study showcases the effectiveness of advanced LLMs and ensemble decision fus
 A detailed analysis on what reasons might cause an ASR to make errors which was discussed in the paper and here is an overview for it 
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/a44aa9e8-0d83-42e4-9f80-3f08220c626f" width="70%" />
+  <img src="ASR error analysis.jpg" width="70%" />
 </p>
 
 <br>
