@@ -4,7 +4,7 @@ here is link to the conference [Gensec](https://sites.google.com/view/gensec-cha
 
 ## Results 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/11f31f3b-fee5-4e9d-918f-d5d71a843897" width="70%" />
+  <img src="results.png" width="70%" />
 </p>
 
 <div align="center" style="width: 50%;">
