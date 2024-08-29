@@ -1,6 +1,6 @@
 # Error Analysis & Prompts
 
-In this section We will discuss how we managed to find out that the approach we are currently using the prompt we are following in all few-shot prompts in all LLMs is the best among other approaches. We will dig deeper in real examples from different datasets to explain and go through it step by step. 
+In this section, we will explore how we determined that the current approach, specifically the prompt structure utilized in all few-shot prompts across various LLMs, is superior to other methodologies. We will provide a detailed analysis, using real examples from different datasets, to explain and justify our approach step by step.
 
 ## A history of all prompts 
 This history is the change of prompt used in Mistral LLM on Chime4 dataset from test folder in hugging face. 
@@ -42,8 +42,13 @@ Errors in ASR systems can be broadly categorized into three layers:
 <br>
 These error layers impact each other. For example, background noise (Layer 1) can lead to misheard words and context misunderstandings (Layer 2), which in turn can cause misspellings and other transcription errors (Layer 3). Figure2 depicts an illustration of various errors in each layer. The focus of our work in this paper addresses the errors in Layer 3, which are extensively discussed in literature.
 <br> 
+<br>
 
-**Based on previous, literal, verbatim, transcription would be the dominant type due to the lack of input audio file and our inability to consider the errors happened in the first 2 layers. Thus, the only evidence we have are the hypothesis given by the ASR which gives a very high weight to consider majority voting among hypothesis to know which of them are pretty close to the real audio file trancripted.**
+<code style="border: 2px solid black; padding: 10px; margin: 10px 0; background-color: #f9f9f9;"> <strong>Important:</strong> Based on previous, literal, verbatim, transcription would be the dominant type due to the lack of input audio file and our inability to consider the errors happened in the first 2 layers. Thus, the only evidence we have are the hypothesis given by the ASR which gives a very high weight to consider majority voting among hypothesis to know which of them are pretty close to the real audio file trancripted.
+</code>
+
+
+
 
 
 ### Dataset error analysis: 
@@ -101,7 +106,8 @@ Regarding the error analysis part and after reviewing most of the data instances
 		- "although closed end funds have been around since at least the <code style="color : red">nineteen twenties</code> they have boomed in popularity this year",
 
 
-**Based on previous and since expected output sentences, in some cases, differ from all given hypothesis, so we need to kind of use clean transciption at least to check grammar mistakes and choose between logical setences. And that is what we did in the prompt.**
+<code style="border: 2px solid black; padding: 10px; margin: 10px 0; background-color: #f9f9f9;"> <strong>Important:</strong> **Based on previous and since expected output sentences, in some cases, differ from all given hypothesis, so we need to kind of use clean transciption at least to check grammar mistakes and choose between logical setences. And that is what we did in the prompt.**
+</code>
 
 
 
