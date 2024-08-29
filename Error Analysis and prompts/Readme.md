@@ -44,7 +44,8 @@ This table only presents the significant changes to out prompt used, small chang
     i would like to fly from san diego to houston on june ten
     Truth: The true hypothesis is: i would like to fly from san diego to houston on june tenth
 
-
+<code style="border: 2px solid black; padding: 10px; margin: 10px 0; background-color: #f9f9f9;"> Theses examples were concatenated to the prompt
+</code>
 
 ## Error Analysis
 
